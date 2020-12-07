@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+ }
+
+body{
+    background-image: linear-gradient( black 40%, white 60%);
+}
+.name h1{
+    text-align: center;
+    color: gray;
+}
+#grid_main {
+    display: grid;
+    grid-gap: 1rem;
+}
+.heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.name{
+    background-color: black;
+}
+.career{
+    background-color: gray;
+    text-align: center;
+    padding-top: 1rem;
+}
+.contact{
+    margin-left: 1rem;
+    background-color: gray;
+}
+.contact ul{
+    padding-top: 0.5rem;
+    list-style-type: none;
+}
+.contact ul li{
+    margin: 0.5rem;
+}
+.section{
+    display: grid;
+    grid-template-areas: 'first second thired'
+                         'fourth fifth sixth';
+}
+.edu{
+    grid-area: first;
+    margin: 1rem 1rem;
+    background-color: gray;
+    padding: 2rem;
+    box-shadow: 20px 20px 20px black;
+
+}
+.tech{
+    grid-area: second;
+    margin: 1rem 1rem;
+    background-color: gray; 
+    padding: 2rem;
+    box-shadow: 20px 20px 20px black;
+}
+.experience{
+    grid-area: thired;
+    margin: 1rem 1rem;
+    background-color: gray;
+    padding: 2rem;
+    box-shadow: 20px 20px 20px black;
+}
+.project{
+    grid-area: fourth;
+    margin: 1rem 1rem;
+    background-color: gray;
+    padding: 2rem;
+    box-shadow: 20px 20px 20px black;
+
+}
+.extra_act{
+    grid-area: fifth;
+    margin: 1rem 1rem;
+    background-color: gray;
+    padding: 2rem ;
+    box-shadow: 20px 20px 20px black;
+
+}
+.strenth{
+    grid-area: sixth;
+    margin: 1rem 1rem;
+    background-color: gray;
+    padding: 2rem;
+    box-shadow: 20px 20px 20px black;
+
+}
+
+@media (max-width: 934px) {
+    .heading {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+    .name{
+        background-color: black;
+        border: 1px solid gray;
+    }
+
+    .career{
+        width: 100%;
+        background-color: gray;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .contact{
+        width: 100%;
+        margin-left: auto;
+        background-color: gray;
+    }
+    .contact ul{
+        /* padding-top: 0.5rem; */
+        text-align: center;
+        list-style-type: none;
+    }
+    .contact ul li{
+        margin: 0.5rem;
+    }
+    .section{
+        display: grid;
+        grid-template-areas: 'first'
+                             'second'
+                             'thired' 
+                             'fourth'
+                             'fifth' 
+                             'sixth';
+    }
+}
